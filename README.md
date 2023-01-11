@@ -2,7 +2,9 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YigitDemirag/spikingTPU/blob/master/SHD_SNN_fast.ipynb)
 
-A simple repo for training recurrent spiking neural networks on TPU or multi-GPU settings. On a single Colab A100, it trains a small size network (256 recurrent neurons) on Spiking Heidelberg Digits dataset in <50 seconds to achieve 76.3% accuracy.
+A simple Colab notebook supporting the training of recurrent spiking neural networks (RSNN) on multi-devices (TPU, GPUs).
+On a single A100 GPU on Colab, it trains a small size RSNN (512 LIF neurons) on Spiking Heidelberg Digits dataset (SHD) under <50 seconds and achieves 76.3% accuracy. 
+
 
 ```
 Epoch: 0/250 - Loss: 17.07 - Training acc: 5.96
@@ -34,8 +36,8 @@ Training completed in 48.46 seconds (5.16 epoch/s)
 SHD Test Accuracy: 76.3%
 ```
 
-###### features
+##### features
 
-- Written in [JAX](https://github.com/google/jax) for `vmap` and `pmap`.
+- written in [JAX](https://github.com/google/jax) for `vmap`, `pmap` <3.
 - [tfds](https://github.com/tensorflow/datasets) as a dataloader
-- Supports prefetching batches to devices.
+- prefetching batches to devices.
