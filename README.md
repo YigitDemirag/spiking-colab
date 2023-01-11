@@ -5,6 +5,7 @@
 A simple Colab notebook supporting the training of recurrent spiking neural networks (RSNN) on multi-devices (TPU, GPUs).
 On a single A100 GPU on Colab, it trains a small size RSNN (512 LIF neurons) on Spiking Heidelberg Digits dataset (SHD) under <50 seconds and achieves 76.3% accuracy. 
 
+PS: Although it supports multi-devices, the network size and dataset are too small to overcome data transfer overhead of `pmap`. Therefore, for the default settings, prefer using single GPU.
 
 ```
 Epoch: 0/250 - Loss: 17.07 - Training acc: 5.96
