@@ -1,6 +1,6 @@
-#### SpikingTPU
+#### spiking-colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YigitDemirag/spikingTPU/blob/master/SHD_SNN_fast.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YigitDemirag/spiking-colab/blob/master/SHD_SNN_fast.ipynb)
 
 A simple Colab notebook supporting the training of recurrent spiking neural networks (RSNN) on multi-devices (TPU, GPUs).
 On a single A100 GPU on Colab, it trains a small size RSNN (512 LIF neurons) on Spiking Heidelberg Digits dataset (SHD) under <50 seconds and achieves 76.3% accuracy. 
